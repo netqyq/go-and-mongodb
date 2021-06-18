@@ -42,7 +42,13 @@ func main() {
 	quickstartDatabase := client.Database("quickstart")
 	// findOne(ctx, quickstartDatabase)
 	// filter(ctx, quickstartDatabase)
-	sorting(ctx, quickstartDatabase)
+	// sorting(ctx, quickstartDatabase)
+	// updataOne(ctx, quickstartDatabase)
+	// updataMany(ctx, quickstartDatabase)
+	// ReplaceOne(ctx, quickstartDatabase)
+	// deleteOne(ctx, quickstartDatabase)
+	// deleteMany(ctx, quickstartDatabase)
+	deleteOne(ctx, quickstartDatabase)
 
 	defer client.Disconnect(ctx)
 }
